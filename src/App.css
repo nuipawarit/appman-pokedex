@@ -1,0 +1,101 @@
+.App {
+  height: 100%;
+}
+
+.App > h1 {
+  text-align: center;
+  height: 50px;
+}
+
+.selected-card-container {
+  height: calc(100% - 130px);
+  padding: 15px;
+  overflow: auto;
+}
+
+.selected-card-container > .card {
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+}
+
+.add-btn {
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+  color: #fff;
+  background: #ec5656;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 50px;
+  border-radius: 50%;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal-bd {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  z-index: 2;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 20px;
+  bottom: 20px;
+  overflow: auto;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+}
+
+.modal > .card {
+  display: inline-block;
+  width: 95%;
+  margin: 10px 0;
+}
+
+.card {
+  position: relative;
+  background: #f3f4f7;
+  padding: 12px;
+}
+
+.image {
+  width: 150px;
+  display: inline-block;
+}
+
+.info {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+}
+
+.name {
+  font-family: "Gaegu";
+  margin: 0;
+}
+
+.action-btn {
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.card-btn {
+  cursor: pointer;
+  color: #ec5656;
+}
